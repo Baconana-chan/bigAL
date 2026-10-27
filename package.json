@@ -1,0 +1,17 @@
+{
+  "name": "bigal",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "bigAL - studio pages, global profile color and OP/ED themes. Ships as MV2, MV3 and a userscript.",
+  "scripts": {
+    "build": "node builder/build.mjs",
+    "watch": "node builder/build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}

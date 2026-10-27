@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bigAL harness</title>
+<script>window.al_token = "harness-token";</script>
+<style>
+  :root {
+    --color-blue: 61,180,242;
+    --color-blue-dim: 141,178,219;
+    --color-blue-300: 201,232,255;
+    --color-blue-500: 111,200,255;
+    --color-blue-600: 61,180,242;
+    --color-blue-700: 8,143,214;
+    --color-blue-800: 12,101,166;
+    --color-blue-900: 11,70,113;
+    --color-blue-100: 247,250,252;
+    --color-blue-200: 236,246,254;
+    --color-blue-400: 143,215,255;
+    --color-blue-1000: 16,61,85;
+    --color-foreground: 34,38,45;
+    --color-background-100: 41,46,54;
+    --color-background-200: 48,54,63;
+    --color-background-300: 64,72,84;
+    --color-background-400: 88,98,112;
+    --color-text: 210,218,227;
+    --color-text-light: 170,182,195;
+    --color-text-lighter: 146,158,172;
+    --color-gray-700: 200,210,220;
+    --color-shadow-blue: 103,132,187;
+    --color-red: 232,93,117;
+    --color-green: 123,213,85;
+    --color-white: 255,255,255;
+  }
+  html { font-size: 10px; }
+  body { background: #101317; color: #d2dae3; font-family: Arial, sans-serif; margin: 0; font-size: 10px; }
+  .nav { height: 50px; display: flex; align-items: center; padding: 0 20px; background: #1b1f27; }
+  .nav a { color: #d2dae3; margin-right: 12px; }
+  .page-content { padding-top: 20px; }
+  .studio-page-unscoped .container, .media-page-unscoped .content { max-width: 1050px; margin: 0 auto; padding: 0 20px; }
+  .container.header h1 { font-size: 2.4rem; }
+  .grid-wrap { display: flex; flex-wrap: wrap; }
+  .media-card { width: 160px; margin: 0 10px 20px; }
+  .cover { display: block; height: 220px; background: #30363f; border-radius: 4px; }
+  .sidebar { width: 320px; margin-left: auto; padding: 0 20px; }
+  .external-links { margin-top: 20px; }
+  .external-links h2, .alx-themes h2 { font-size: 1.7rem; padding-left: 12px; margin: 0 0 10px; }
+  .alx-studio { padding-top: 20px; }
+  .media-page-unscoped .content { display: flex; }
+  .media-page-unscoped .content .main { flex: 1; }
+  .media-page-unscoped .content .overview { flex: 1; min-width: 0; }
+  .grid-section-wrap, .recommendations { margin-bottom: 30px; }
+  .data { background: rgb(var(--color-foreground)); padding: 18px; border-radius: 3px; margin-bottom: 25px; }
+  .alx-theme { color: #d2dae3; }
+</style>
+</head>
+<body class="site-theme-dark">
+  <div class="nav">
+    <a href="/user/Sampowe/">avatar</a>
+    <a href="/">home</a>
+  </div>
+  <div class="page-content">
+    <div class="studio studio-page-unscoped">
+      <div>
+        <div class="container header"><h1>Studio Ghibli</h1></div>
+      </div>
+      <div class="filters container"><div class="mini-select sort">Newest</div></div>
+      <div class="container">
+        <div>
+          <h3 class="year">2026</h3>
+          <div class="grid-wrap">
+            <div class="media-card isMain"><a class="cover" href="/anime/211232"></a><a class="title" href="/anime/211232">Native card</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home">
+      <div class="list-previews"></div>
+    </div>
+
+    <div class="media media-page-unscoped">
+      <div class="content container">
+        <div class="sidebar">
+          <div class="rankings"></div>
+          <div class="data"><div class="type">Format</div><div class="value">TV</div></div>
+          <div class="tags"></div>
+          <div class="external-links"><h2>External &amp; Streaming links</h2><div class="external-links-wrap"></div></div>
+        </div>
+        <div class="overview">
+          <div class="description-wrap"></div>
+          <div class="grid-section-wrap"><div class="trailer"><h2>Trailer</h2></div></div>
+          <div class="recommendations"><h2>Recommendations</h2></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/dist/bigAL.user.js"></script>
+</body>
+</html>

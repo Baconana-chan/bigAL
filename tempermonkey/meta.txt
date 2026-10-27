@@ -1,0 +1,14 @@
+// ==UserScript==
+// @name         bigAL
+// @namespace    bigal
+// @version      {{version}}
+// @description  Enhanced studio pages, a global profile accent and opening/ending themes on AniList.
+// @match        https://anilist.co/*
+// @run-at       document-idle
+// @noframes
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_addStyle
+// @connect      graphql.anilist.co
+// @connect      graphql.animethemes.moe
+// ==/UserScript==
